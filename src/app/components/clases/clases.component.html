@@ -1,0 +1,13 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+    A simple primary alert—check it out!
+</div>
+<button type="button" (click)="alerta = 'alert-info'" class="btn btn-info mr-2">INFO</button>
+<button type="button" (click)="alerta = 'alert-success'" class="btn btn-success">SUCCESS</button>
+
+<br><br>
+
+<h3 [ngClass]=" { 'text-danger': propiedades.danger, 'text-info': !propiedades.danger  } ">Hola mundo</h3>
+
+<button (click)="propiedades.danger = !propiedades.danger" type="button" class="btn" [ngClass]="{ 'btn-danger': propiedades.danger, 'btn-info': !propiedades.danger }">
+    Cambiar
+</button>

@@ -14,7 +14,6 @@ import { Component, OnInit } from '@angular/core';
           font-size:20px
         }
   ` ]
-
 })
 export class CssComponent implements OnInit {
 
